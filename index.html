@@ -7,46 +7,94 @@
     <title>Semana 05 - Código visto em aula</title>
   </head>
   <body>
-    <h1 id="titulo">Código visto nas aulas da semana 05</h1>
-    <h3>Semana 05</h3>
-    <h3>Aula 01</h3>
-    <section id="texto">
-      <p class="paragrafo">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-        consequuntur debitis quo, eos fugit necessitatibus mollitia. Officiis,
-        tempore ullam? Tempore at molestias eaque maxime libero rerum quibusdam
-        itaque eos saepe.
-      </p>
-      <p class="paragrafo">
-        Lorem ipsum dolor <strong>texto strong na sessão texto</strong> adipisicing
-        elit. Laborum consequatur.
-      </p>
-      <h6 class="paragrafo">Final do texto;</h6>
-    </section>
+    <header>
+      <h1 id="titulo">Código visto nas aulas da semana 05</h1>
+      <h3>Semana 05</h3>
+      <h3>Aula 01</h3>
+    </header>
+    <main>
+      <section id="texto">
+        <p class="paragrafo">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+          consequuntur debitis quo, eos fugit necessitatibus mollitia. Officiis,
+          tempore ullam? Tempore at molestias eaque maxime libero rerum
+          quibusdam itaque eos saepe.
+        </p>
+        <p class="paragrafo">
+          Lorem ipsum dolor
+          <strong>texto strong na sessão texto</strong> adipisicing elit.
+          Laborum consequatur.
+        </p>
+        <h6 class="paragrafo">Final do texto;</h6>
+      </section>
 
-    <section id="curiosidades">
-      <p class="paragrafo">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-        consequuntur debitis quo, eos fugit necessitatibus mollitia. Officiis,
-        tempore ullam? Tempore at molestias eaque maxime libero rerum quibusdam
-        itaque eos saepe.
-      </p>
-      <p class="paragrafo">
-        Lorem ipsum dolor <strong>texto strong na sessão curiosidades</strong> adipisicing
-        elit. Laborum consequatur.
-      </p>
-      <h6 class="paragrafo">Final do texto;</h6>
-    </section>
-    
-    <form action="">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" value="Digite o seu nome" /><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" value="oi"/><br>
-        <button type="submit">Enviar</button>
-    </form>
+      <section id="curiosidades">
+        <p class="paragrafo">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+          consequuntur debitis quo, eos fugit necessitatibus mollitia. Officiis,
+          tempore ullam? Tempore at molestias eaque maxime libero rerum
+          quibusdam itaque eos saepe.
+        </p>
+        <p class="paragrafo">
+          Lorem ipsum dolor
+          <strong>texto strong na sessão curiosidades</strong> adipisicing elit.
+          Laborum consequatur.
+        </p>
+        <h6 class="paragrafo">Final do texto;</h6>
+      </section>
+
+      <section class="form-container">
+        <form id="formRegistro">
+          <div class="form-field">
+            <label for="nome">Nome:</label><br />
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              value="Digite o seu nome"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Tipo do documento:</label><br />
+            <input type="radio" id="cnpj" name="typeDoc" />CNPJ
+            <input type="radio" id="cpf" name="typeDoc" /> CPF
+          </div>
+
+          <div class="form-field">
+            <label for="email">CNPJ:</label><br />
+            <input type="text" id="cnpj" name="cnpj" /><br />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Aula 04/06</h2>
+        <br />
+        <h3>Lista de compras</h3>
+        <ul id="list">
+          <li>Pão</li>
+          <li>Arroz</li>
+          <li>Feijão</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Aula 05/06</h2>
+        <br />
+        
+      </section>
+    </main>
 
     <!-- 
+      Exercícios vistos nos slides
+
     <h2>Exercício do slide 01 pag 10 e 11</h2>
     <section id="services">
         <h2>Serviços</h2>
@@ -64,9 +112,10 @@
         </div>
     </section> -->
 
-    <script src="./scripts/aula01.js"></script>
+
+    <!-- <script src="./scripts/aula01.js"></script> -->
     <!-- <script src="./scripts/aula02.js"></script> -->
-    <!-- <script src="./scripts/aula03.js"></script> -->
+    <script src="./scripts/aula03.js"></script>
     <!-- <script src="./scripts/aula04.js"></script> -->
   </body>
 </html>
