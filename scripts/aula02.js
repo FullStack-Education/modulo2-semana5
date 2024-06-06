@@ -59,3 +59,15 @@ if (tagForm2.children.length > 17) {
     tagForm2.removeChild(tagForm2.children[17]);
 }
 console.log("Formulário após remover o filho 17: ", tagForm2.children);
+
+
+// =========== CloneNode ===========
+// Usando cloneNode para clonar elementos do DOM
+
+let tagItem = document.querySelector("ul#list li");
+let li = tagItem.cloneNode();
+console.log(li); // <li></li>
+// Para clonar o conteúdo interno do elemento, passamos 
+// true como argumento
+let liFull = tagItem.cloneNode(true); 
+console.log(liFull); // <li>Pão</li>

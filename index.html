@@ -57,7 +57,13 @@
 
           <div class="form-field">
             <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required />
+            <input
+              onkeyup="clicou(event)"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
           </div>
 
           <div class="form-field">
@@ -69,6 +75,15 @@
           <div class="form-field">
             <label for="email">CNPJ:</label><br />
             <input type="text" id="cnpj" name="cnpj" /><br />
+          </div>
+
+          <div>
+            <label for="email">Estado:</label><br />
+            <select id="teste" onchange="selecionouOpcao()">
+              <option value="pe">Pernambuco</option>
+              <option value="sc">Santa Catarina</option>
+              <option value="rgs">Rio Grande do Sul</option>
+            </select>
           </div>
           <button type="submit">Enviar</button>
         </form>
@@ -88,7 +103,69 @@
       <section>
         <h2>Aula 05/06</h2>
         <br />
-        
+        <div class="div-border" onmouseup="mouseUp()" onmousedown="mouseDown()">
+          Clique aqui
+        </div>
+        <button
+          id="clickButton"
+          onmousedown="mouseDown()"
+          onmouseup="mouseUp()"
+        >
+          Clique aqui
+        </button>
+        <p id="try"></p>
+        <br />
+        onkeydown: <input type="text" onkeydown="keyDown()" /> onkeypress:
+        <input type="text" onkeypress="keyPress()" /> onkeyup:
+        <input type="text" onkeyup="keyUp()" />
+        <br />
+        <br />
+        <div class="head-title-table">
+          <h3>Lista de Alunos</h3>
+          <button onclick="perguntarDados()">Adicionar</button>
+        </div>
+        <table class="student-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Curso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ana Silva</td>
+              <td>20</td>
+              <td>Engenharia</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Bruno Santos</td>
+              <td>22</td>
+              <td>Medicina</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Carla Pereira</td>
+              <td>21</td>
+              <td>Direito</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Daniel Oliveira</td>
+              <td>23</td>
+              <td>Administração</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Eduarda Costa</td>
+              <td>19</td>
+              <td>Ciência da Computação</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 
@@ -111,7 +188,6 @@
             <p>Descrição do serviço 3.</p>
         </div>
     </section> -->
-
 
     <!-- <script src="./scripts/aula01.js"></script> -->
     <!-- <script src="./scripts/aula02.js"></script> -->
