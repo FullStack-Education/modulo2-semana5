@@ -91,6 +91,7 @@ label {
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="email"] {
     width: calc(100% - 20px);
     padding: 8px 10px;
