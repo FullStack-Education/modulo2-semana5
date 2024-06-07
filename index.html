@@ -167,6 +167,47 @@
           </tbody>
         </table>
       </section>
+
+      <section>
+        <h2>Aula 06/06</h2>
+        <br />
+        <div class="container">
+          <h2>Cadastro</h2>
+          <form name="cadastroAluno" onsubmit="registrarEstudante(event)">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="cpf">Telefone</label>
+            <input
+              type="text"
+              name="telefone"
+              pattern="\(\d{2}\) \d{5}-\d{4}"
+            />
+            <!-- (22) 22222-2222 -->
+
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              minlength="11"
+              maxlength="11"
+              required
+            />
+
+            <label for="matricula">Matrícula</label>
+            <input type="text" id="matricula" name="matricula" required />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- 
@@ -187,11 +228,40 @@
             <h3>Serviço 3</h3>
             <p>Descrição do serviço 3.</p>
         </div>
-    </section> -->
+    </section> 
+    
+    
+    
+    slide 04 pag 04
+    <section>
+      <div class="container">
+        <h2>Cadastro</h2>
+        <form method="post" name="cadastroAluno">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" value="Lucas">
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="lucas123@gmail.com">
+          
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" value="12345678910">
+          
+          <label for="matricula">Matrícula</label>
+          <input type="text" id="matricula" name="matricula" value="123456">
+          
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" value="12345678">
+          
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+    -->
+
 
     <!-- <script src="./scripts/aula01.js"></script> -->
     <!-- <script src="./scripts/aula02.js"></script> -->
-    <script src="./scripts/aula03.js"></script>
-    <!-- <script src="./scripts/aula04.js"></script> -->
+    <!-- <script src="./scripts/aula03.js"></script> -->
+    <script src="./scripts/aula04.js"></script>
   </body>
 </html>
